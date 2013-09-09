@@ -1,0 +1,42 @@
+body {padding:0; margin:0; color:#000000; background-color:#000000}
+body, td {font-family:Tahoma; font-size:11px; }
+br{font-size:10px}
+
+
+.header{color:#1A5583; font-size:11px; line-height:13px} 
+.header a{color:#5C6368; text-decoration:none} 
+.header a:hover{text-decoration:underline} 
+
+.content td{color:#4A4F54; font-size:11px; line-height:13px} 
+.content b{color:#8E9499; text-transform:uppercase} 
+.content b a{color:#74797D; text-decoration:underline; font-weight:normal; text-transform:none} 
+.content b a:hover{text-decoration:none} 
+.content a{color:#484C51; text-decoration:underline} 
+.content a:hover{text-decoration:none} 
+.content li{background:url(images/1_z1.gif)  center left no-repeat; margin:0px 0px 0px 0px; padding:0px 0px 0px 28px }
+
+.content .block{color:#74797D; font-size:10px; line-height:13px}
+.content .block a{color:#74797D; text-decoration:none}
+.content .block a:hover{text-decoration:underline} 
+
+.content .block1 b a{color:#74797D; font-size:11px; text-decoration:none; font-weight:bold}
+.content .block1 b a:hover{text-decoration:underline} 
+.content .block1 a{color:#74797D; font-size:11px; text-decoration:underline}
+.content .block1 a:hover{text-decoration:none} 
+
+.content .block2 a{color:#74797D; font-size:11px; text-decoration:underline}
+.content .block2 a:hover{text-decoration:none} 
+
+.footer{color:#2D3032; font-size:11px; line-height:13px} 
+.footer a{color:#2D3032; font-size:11px; text-decoration:underline} 
+.footer a:hover{text-decoration:none} 
+
+input,textarea{
+   background:#FFFFFF;
+   border:1px solid #464646;
+   font-family:Tahoma;
+   color:#4A4F54; 
+   font-size:11px;
+   padding-left:5px
+} 
+ 
