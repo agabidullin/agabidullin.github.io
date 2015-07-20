@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'certege';
+    src: url('certege.eot');
+    src: url('certege.eot?#iefix') format('embedded-opentype'),
+         url('certege.woff') format('woff'),
+         url('certege.ttf') format('truetype');
+    font-weight: normal;
+}

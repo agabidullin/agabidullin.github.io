@@ -1,44 +1,398 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en" class=" js no-touch csstransitions csstransformspreserve3d">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<title>Ever After - Responsive Wedding Invite Template</title>
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 
-    <title>Arm</title>
 
-    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-    <script type="text/javascript">var Ext=Ext||{};Ext.manifest=Ext.manifest||"app.json";Ext=Ext||{};
-Ext.Boot=Ext.Boot||function(h){function k(a){if(a.$isRequest)return a;a=a.url?a:{url:a};var b=a.url;q(a,{urls:b.charAt?[b]:b,charset:a.charset||d.config.charset});q(this,a)}function t(a){if(a.$isEntry)return a;var b=a.charset||d.config.charset,c=Ext.manifest,c=c&&c.loader,e=void 0!==a.cache?a.cache:c&&c.cache,l;void 0===e&&(e=!d.config.disableCaching);!1===e?l=+new Date:!0!==e&&(l=e);l&&(c=c&&c.cacheParam||d.config.disableCachingParam,l=c+"\x3d"+l);q(a,{charset:b,buster:l,requests:[]});q(this,a)}
-var j=document,m=function(a,b,c){c&&m(a,c);if(a&&b&&"object"==typeof b)for(var e in b)a[e]=b[e];return a},f={disableCaching:/[?&](?:cache|disableCacheBuster)\b/i.test(location.search)||!/http[s]?\:/i.test(location.href)||/(^|[ ;])ext-cache=1/.test(j.cookie)?!1:!0,disableCachingParam:"_dc",loadDelay:!1,preserveScripts:!0,charset:void 0},x=/\.css(?:\?|$)/i,v=j.createElement("a"),u="undefined"!==typeof window,r={browser:u,node:!u&&"function"===typeof require,phantom:"undefined"!==typeof phantom&&phantom.fs},
-s={},q=function(a,b,c){c&&q(a,c);if(a&&b&&"object"===typeof b)for(var e in b)a[e]=b[e];return a},d={loading:0,loaded:0,env:r,config:f,scripts:{},currentFile:null,suspendedQueue:[],currentRequest:null,syncMode:!1,useElements:!0,listeners:[],Request:k,Entry:t,platformTags:s,detectPlatformTags:function(){var a=navigator.userAgent,b=s.isMobile=/Mobile(\/|\s)/.test(a),c,e,l,n;c=document.createElement("div");e="iPhone;iPod;Android;Silk;Android 2;BlackBerry;BB;iPad;RIM Tablet OS;MSIE 10;Trident;Chrome;Tizen;Firefox;Safari;Windows Phone".split(";");
-var g={};l=e.length;var f;for(f=0;f<l;f++)n=e[f],g[n]=RegExp(n).test(a);b=g.iPhone||g.iPod||!g.Silk&&g.Android&&(g["Android 2"]||b)||(g.BlackBerry||g.BB)&&g.isMobile||g["Windows Phone"];a=!s.isPhone&&(g.iPad||g.Android||g.Silk||g["RIM Tablet OS"]||g["MSIE 10"]&&/; Touch/.test(a));e="ontouchend"in c;!e&&(c.setAttribute&&c.removeAttribute)&&(c.setAttribute("ontouchend",""),e="function"===typeof c.ontouchend,"undefined"!==typeof c.ontouchend&&(c.ontouchend=void 0),c.removeAttribute("ontouchend"));e=
-e||navigator.maxTouchPoints||navigator.msMaxTouchPoints;c=!b&&!a;l=g["MSIE 10"];n=g.Blackberry||g.BB;m(s,d.loadPlatformsParam(),{phone:b,tablet:a,desktop:c,touch:e,ios:g.iPad||g.iPhone||g.iPod,android:g.Android||g.Silk,blackberry:n,safari:g.Safari&&n,chrome:g.Chrome,ie10:l,windows:l||g.Trident,tizen:g.Tizen,firefox:g.Firefox})},loadPlatformsParam:function(){var a=window.location.search.substr(1).split("\x26"),b={},c,e,d;for(c=0;c<a.length;c++)e=a[c].split("\x3d"),b[e[0]]=e[1];if(b.platformTags){e=
-b.platform.split(/\W/);a=e.length;for(c=0;c<a;c++)d=e[c].split(":")}return d},getPlatformTags:function(){return d.platformTags},filterPlatform:function(a){a=[].concat(a);var b=d.getPlatformTags(),c,e,l;c=a.length;for(e=0;e<c;e++)if(l=a[e],b.hasOwnProperty(l))return!!b[l];return!1},init:function(){var a=j.getElementsByTagName("script"),b=a.length,c=/\/ext(\-[a-z\-]+)?\.js$/,e,l,n,g,f,p;for(p=0;p<b;p++)if(l=(e=a[p]).src)n=e.readyState||null,!g&&c.test(l)&&(d.hasReadyState="readyState"in e,d.hasAsync=
-"async"in e||!d.hasReadyState,g=l),d.scripts[f=d.canonicalUrl(l)]||new t({key:f,url:l,done:null===n||"loaded"===n||"complete"===n,el:e,prop:"src"});g||(e=a[a.length-1],g=e.src,d.hasReadyState="readyState"in e,d.hasAsync="async"in e||!d.hasReadyState);d.baseUrl=g.substring(0,g.lastIndexOf("/")+1);d.origin=window.location.origin||window.location.protocol+"//"+window.location.hostnaBoot+(window.location.port?":"+window.location.port:"");d.detectPlatformTags();Ext.filterPlatform=d.filterPlatform},canonicalUrl:function(a){v.href=
-a;a=v.href;var b=f.disableCachingParam,b=b?a.indexOf(b+"\x3d"):-1,c,e;if(0<b&&("?"===(c=a.charAt(b-1))||"\x26"===c)){e=a.indexOf("\x26",b);if((e=0>e?"":a.substring(e))&&"?"===c)++b,e=e.substring(1);a=a.substring(0,b-1)+e}return a},getConfig:function(a){return a?d.config[a]:d.config},setConfig:function(a,b){if("string"===typeof a)d.config[a]=b;else for(var c in a)d.setConfig(c,a[c]);return d},getHead:function(){return d.docHead||(d.docHead=j.head||j.getElementsByTagName("head")[0])},create:function(a,
-b,c){c=c||{};c.url=a;c.key=b;return d.scripts[b]=new t(c)},getEntry:function(a,b){var c=d.canonicalUrl(a),e=d.scripts[c];e||(e=d.create(a,c,b));return e},processRequest:function(a,b){a.loadEntries(b)},load:function(a){a=new k(a);if(a.sync||d.syncMode)return d.loadSync(a);d.currentRequest?(a.getEntries(),d.suspendedQueue.push(a)):(d.currentRequest=a,d.processRequest(a,!1));return d},loadSync:function(a){a=new k(a);d.syncMode++;d.processRequest(a,!0);d.syncMode--;return d},loadBasePrefix:function(a){a=
-new k(a);a.prependBaseUrl=!0;return d.load(a)},loadSyncBasePrefix:function(a){a=new k(a);a.prependBaseUrl=!0;return d.loadSync(a)},requestComplete:function(a){if(d.currentRequest===a)for(d.currentRequest=null;0<d.suspendedQueue.length;)if(a=d.suspendedQueue.shift(),!a.done){d.load(a);break}!d.currentRequest&&0==d.suspendedQueue.length&&d.fireListeners()},isLoading:function(){return!d.currentRequest&&0==d.suspendedQueue.length},fireListeners:function(){for(var a;d.isLoading()&&(a=d.listeners.shift());)a()},
-onBootReady:function(a){d.isLoading()?d.listeners.push(a):a()},getPathsFromIndexes:function(a,b){return k.prototype.getPathsFromIndexes(a,b)},createLoadOrderMap:function(a){return k.prototype.createLoadOrderMap(a)},fetch:function(a,b,c,e){e=void 0===e?!!b:e;var d=new XMLHttpRequest,f,g,w,p=!1,h=function(){d&&4==d.readyState&&(g=1223===d.status?204:0===d.status&&("file:"===(self.location||{}).protocol||"ionp:"===(self.location||{}).protocol)?200:d.status,w=d.responseText,f={content:w,status:g,exception:p},
-b&&b.call(c,f),d=null)};e&&(d.onreadystatechange=h);try{d.open("GET",a,e),d.send(null)}catch(j){return p=j,h(),f}e||h();return f},notifyAll:function(a){a.notifyRequests()}};k.prototype={$isRequest:!0,createLoadOrderMap:function(a){var b=a.length,c={},e,d;for(e=0;e<b;e++)d=a[e],c[d.path]=d;return c},getLoadIndexes:function(a,b,c,e,l){var f=c[a],g,h,p,j,k;if(b[a])return b;b[a]=!0;for(a=!1;!a;){p=!1;for(j in b)if(b.hasOwnProperty(j)&&(f=c[j]))if(h=this.prepareUrl(f.path),h=d.getEntry(h),!l||!h||!h.done){h=
-f.requires;e&&f.uses&&(h=h.concat(f.uses));f=h.length;for(g=0;g<f;g++)k=h[g],b[k]||(p=b[k]=!0)}p||(a=!0)}return b},getPathsFromIndexes:function(a,b){var c=[],e=[],d,f;for(d in a)a.hasOwnProperty(d)&&a[d]&&c.push(d);c.sort(function(a,b){return a-b});d=c.length;for(f=0;f<d;f++)e.push(b[c[f]].path);return e},expandUrl:function(a,b,c,e){"string"==typeof a&&(a=[a]);var d=this.loadOrder,f=this.loadOrderMap;if(d){this.loadOrderMap=f=f||this.createLoadOrderMap(d);b=b||{};var g=a.length,h=[],j,k;for(j=0;j<
-g;j++)(k=f[a[j]])?this.getLoadIndexes(k.idx,b,d,c,e):h.push(a[j]);return this.getPathsFromIndexes(b,d).concat(h)}return a},expandUrls:function(a,b){"string"==typeof a&&(a=[a]);var c=[],d={},f,h=a.length,g,j,k,m;for(g=0;g<h;g++){f=this.expandUrl(a[g],{},b,!0);j=0;for(k=f.length;j<k;j++)m=f[j],d[m]||(d[m]=!0,c.push(m))}0==c.length&&(c=a);return c},expandLoadOrder:function(){var a=this.urls,b;this.expanded?b=a:(b=this.expandUrls(a),this.expanded=!0);this.urls=b;a.length!=b.length&&(this.sequential=!0);
-return this},getUrls:function(){this.expandLoadOrder();return this.urls},prepareUrl:function(a){return this.prependBaseUrl?d.baseUrl+a:a},getEntries:function(){var a=this.entries,b,c,e;if(!a){a=[];e=this.getUrls();for(b=0;b<e.length;b++)c=this.prepareUrl(e[b]),c=d.getEntry(c,{buster:this.buster,charset:this.charset}),c.requests.push(this),a.push(c);this.entries=a}return a},loadEntries:function(a){var b=this,c=b.getEntries(),d=c.length,f=b.loadStart||0,h,g;void 0!==a&&(b.sync=a);b.loaded=b.loaded||
-0;b.loading=b.loading||d;for(g=f;g<d;g++)if(h=c[g],f=h.loaded?!0:c[g].load(b.sync),!f){b.loadStart=g;h.onDone(function(){b.loadEntries(a)});break}b.processLoadedEntries()},processLoadedEntries:function(){var a=this.getEntries(),b=a.length,c=this.startIndex||0,d;if(!this.done){for(;c<b;c++){d=a[c];if(!d.loaded){this.startIndex=c;return}d.evaluated||d.evaluate();d.error&&(this.error=!0)}this.notify()}},notify:function(){var a=this;if(!a.done){var b=a.error,c=a[b?"failure":"success"],b="delay"in a?a.delay:
-b?1:d.config.chainDelay,e=a.scope||a;a.done=!0;c&&(0===b||0<b?setTimeout(function(){c.call(e,a)},b):c.call(e,a));a.fireListeners();d.requestComplete(a)}},onDone:function(a){var b=this.listeners||(this.listeners=[]);this.done?a(this):b.push(a)},fireListeners:function(){var a=this.listeners,b;if(a)for(;b=a.shift();)b(this)}};t.prototype={$isEntry:!0,done:!1,evaluated:!1,loaded:!1,isCrossDomain:function(){void 0===this.crossDomain&&(this.crossDomain=0!==this.getLoadUrl().indexOf(d.origin));return this.crossDomain},
-isCss:function(){void 0===this.css&&(this.css=this.url&&x.test(this.url));return this.css},getElement:function(a){var b=this.el;b||(this.isCss()?(a=a||"link",b=j.createElement(a),"link"==a?(b.rel="stylesheet",this.prop="href"):this.prop="textContent",b.type="text/css"):(b=j.createElement(a||"script"),b.type="text/javascript",this.prop="src",d.hasAsync&&(b.async=!1)),this.el=b);return b},getLoadUrl:function(){var a=d.canonicalUrl(this.url);this.loadUrl||(this.loadUrl=this.buster?a+(-1===a.indexOf("?")?
-"?":"\x26")+this.buster:a);return this.loadUrl},fetch:function(a){var b=this.getLoadUrl();d.fetch(b,a.complete,this,!!a.async)},onContentLoaded:function(a){var b=a.status,c=a.content;a=a.exception;this.getLoadUrl();this.loaded=!0;(a||0===b)&&!r.phantom?this.evaluated=this.error=!0:200<=b&&300>b||304===b||r.phantom||0===b&&0<c.length?this.content=c:this.evaluated=this.error=!0},createLoadElement:function(a){var b=this,c=b.getElement();b.preserve=!0;c.onerror=function(){b.error=!0;a&&a()};d.hasReadyState?
-c.onreadystatechange=function(){("loaded"===this.readyState||"complete"===this.readyState)&&a&&a()}:c.onload=a;c[b.prop]=b.getLoadUrl()},onLoadElementReady:function(){d.getHead().appendChild(this.getElement());this.evaluated=!0},inject:function(a){var b=d.getHead(),c=this.url,e=this.key,f,h;this.isCss()?(this.preserve=!0,h=e.substring(0,e.lastIndexOf("/")+1),f=j.createElement("base"),f.href=h,b.firstChild?b.insertBefore(f,b.firstChild):b.appendChild(f),f.href=f.href,c&&(a+="\n/*# sourceURL\x3d"+e+
-" */"),c=this.getElement("style"),e="styleSheet"in c,b.appendChild(f),e?(b.appendChild(c),c.styleSheet.cssText=a):(c.textContent=a,b.appendChild(c)),b.removeChild(f)):(c&&(a+="\n//# sourceURL\x3d"+e),Ext.globalEval(a));return this},loadCrossDomain:function(){var a=this,b=function(){a.loaded=a.evaluated=a.done=!0;a.notifyRequests()};if(a.isCss())a.createLoadElement(),a.evaluateLoadElement(),b();else return a.createLoadElement(function(){b()}),a.evaluateLoadElement(),!1;return!0},loadElement:function(){var a=
-this;if(a.isCss())return a.loadCrossDomain();a.createLoadElement(function(){a.loaded=a.evaluated=a.done=!0;a.notifyRequests()});a.evaluateLoadElement();return!0},loadSync:function(){var a=this;a.fetch({async:!1,complete:function(b){a.onContentLoaded(b)}});a.evaluate();a.notifyRequests()},load:function(a){var b=this;if(!b.loaded){if(b.loading)return!1;b.loading=!0;if(a)b.loadSync();else{if(b.isCrossDomain())return b.loadCrossDomain();if(!b.isCss()&&d.hasReadyState)b.createLoadElement(function(){b.loaded=
-!0;b.notifyRequests()});else{if(d.useElements)return b.loadElement();b.fetch({async:!a,complete:function(a){b.onContentLoaded(a);b.notifyRequests()}})}}}return!0},evaluateContent:function(){this.inject(this.content);this.content=null},evaluateLoadElement:function(){d.getHead().appendChild(this.getElement())},evaluate:function(){!this.evaluated&&!this.evaluating&&(this.evaluating=!0,void 0!==this.content?this.evaluateContent():this.error||this.evaluateLoadElement(),this.evaluated=this.done=!0,this.cleanup())},
-cleanup:function(){var a=this.el,b;if(a){if(!this.preserve)for(b in this.el=null,a.parentNode.removeChild(a),a)try{b!==this.prop&&(a[b]=null),delete a[b]}catch(c){}a.onload=a.onerror=a.onreadystatechange=h}},notifyRequests:function(){var a=this.requests,b=a.length,c,d;for(c=0;c<b;c++)d=a[c],d.processLoadedEntries();this.done&&this.fireListeners()},onDone:function(a){var b=this.listeners||(this.listeners=[]);this.done?a(this):b.push(a)},fireListeners:function(){var a=this.listeners,b;if(a&&0<a.length)for(;b=
-a.shift();)b(this)}};Ext.disableCacheBuster=function(a,b){var c=new Date;c.setTime(c.getTime()+864E5*(a?3650:-1));c=c.toGMTString();j.cookie="ext-cache\x3d1; expires\x3d"+c+"; path\x3d"+(b||"/")};d.init();return d}(function(){});Ext.globalEval=Ext.globalEval||(this.execScript?function(h){execScript(h)}:function(h){eval.call(window,h)});
-Function.prototype.bind||function(){var h=Array.prototype.slice,k=function(k){var j=h.call(arguments,1),m=this;if(j.length)return function(){var f=arguments;return m.apply(k,f.length?j.concat(h.call(f)):j)};j=null;return function(){return m.apply(k,arguments)}};Function.prototype.bind=k;k.$extjs=!0}();Ext=Ext||window.Ext||{};
-Ext.Microloader=Ext.Microloader||function(){var h=Ext.Boot,k=[],t=!1,j=h.platformTags,m={platformTags:j,detectPlatformTags:function(){Ext.beforeLoad&&Ext.beforeLoad(j)},initPlatformTags:function(){m.detectPlatformTags()},getPlatformTags:function(){return h.platformTags},filterPlatform:function(f){return h.filterPlatform(f)},init:function(){m.initPlatformTags();var f=Ext._beforereadyhandler;Ext._beforereadyhandler=function(){Ext.Boot!==h&&(Ext.apply(Ext.Boot,h),Ext.Boot=h);f&&f()}},run:function(){m.init();
-var f=Ext.manifest;if("string"===typeof f){var j=f.indexOf(".json")===f.length-5?f:f+".json";h.fetch(j,function(h){f=Ext.manifest=JSON.parse(h.content);m.load(f)})}else m.load(f)},load:function(f){var j=f.loadOrder,k=j?h.createLoadOrderMap(j):null,u=[],r=f.js||[],s=f.css||[],q,d=function(){t=!0;m.notify()};j&&(f.loadOrderMap=k);for(var a=s.concat(r),s=a.length,r=0;r<s;r++)f=a[r],q=!0,f.platform&&!h.filterPlatform(f.platform)&&(q=!1),q&&u.push(f.path);h.load({url:u,loadOrder:j,loadOrderMap:k,sequential:!0,
-success:d,failure:d})},onMicroloaderReady:function(f){t?f():k.push(f)},notify:function(){for(var f;f=k.shift();)f()}};return m}();Ext.manifest=Ext.manifest||"bootstrap";Ext.Microloader.run();</script>
-    
-</head>
-<body>
-</body>
-</html>
+	<link href="fonts/bradobrei.css" rel="stylesheet">
+	<link href="fonts/calligraph.css" rel="stylesheet">
+	<link href="fonts/classica.css" rel="stylesheet">		
+	<link href="fonts/ahellya.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/supersized.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/component.css">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Niconne&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+	<script src="js/modernizr.min.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <![endif]-->
+  </head>
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+  	
+  	<nav class="menu" id="theMenu">
+  		<div class="menu-wrap">
+  			<h1 class="logo"><a href="index.html#home">Наша свадьба</a></h1>
+  			<a href="#home" class="smoothScroll">К началу</a>
+  			<a href="#story" class="smoothScroll">Лавстори</a>
+  			<a href="#gallery" class="smoothScroll">Фотогалерея</a>
+  			<a href="#events" class="smoothScroll">События</a>
+  			<a href="#rsvp" class="smoothScroll">Ты придешь?</a>
+  			<a href="#gifts" class="smoothScroll">Подарки</a>
+  		</div>
+  		<div id="menuToggle"><i class="fa fa-heart"></i></div>
+  	</nav>
+  	<section id="home"></section>
+  	<div id="headerwrap" class="hero" style="height: 380px;">
+  		<div class="container">
+  			<br>
+  			<h1>Альберт и Алина</h1>
+  			<h2 class="amp">Мы женимся!</h2>
+  			<div class="row">
+  				<br>
+  				<br>
+  				<br>
+  				<div class="col-lg-6 col-lg-offset-3">
+  				</div>
+  			</div>
+  		</div>
+  		<div id="overlay"></div>
+  		<ul id="slide-list">
+  			<li class="slide-link-0"><a></a></li>
+  			<li class="slide-link-1"><a></a></li>
+  			<li class="slide-link-2"><a></a></li>
+  		</ul>
+  	</div>
+  	<div class="white">
+  		<div class="container">
+  			<div class="row">
+  				<h2>До свадьбы осталось:</h2>
+  				<span class="hearts"></span>
+  			</div>
+  			<div class="row">
+  				<div class="col-lg-8 col-lg-offset-2">
+  					<ul id="countdown_dashboard">
+  						<li class="dash weeks_dash">
+  							<span class="dash_title">недель</span>
+  							<div class="digit"><div class="top" style="display: none;">4</div><div class="bottom" style="display: block;">4</div></div>
+  							<div class="digit"><div class="top" style="display: none;">1</div><div class="bottom" style="display: block;">1</div></div>
+  						</li>
+  						<li class="dash days_dash">
+  							<span class="dash_title">дней</span>
+  							<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+  							<div class="digit"><div class="top" style="display: none;">4</div><div class="bottom" style="display: block;">4</div></div>
+  						</li>
+  						<li class="dash hours_dash">
+  							<span class="dash_title">часов</span>
+  							<div class="digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block;">0</div></div>
+  							<div class="digit"><div class="top" style="display: none;">2</div><div class="bottom" style="display: block;">2</div></div>
+  						</li>
+  						<li class="dash minutes_dash">
+  							<span class="dash_title">минут</span>
+  							<div class="digit"><div class="top" style="display: none;">3</div><div class="bottom" style="display: block;">3</div></div>
+  							<div class="digit"><div class="top" style="display: none;">2</div><div class="bottom" style="display: block;">2</div></div>
+  						</li>
+  						<li class="dash seconds_dash">
+  							<span class="dash_title">секунд</span>
+  							<div class="digit"><div class="top" style="display: none;">1</div><div class="bottom" style="display: block;">1</div></div>
+  							<div class="digit"><div class="top" style="display: none;">8</div><div class="bottom" style="display: block;">8</div></div>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<section id="story"></section>
+  	<div class="grey">
+  		<div class="container">
+  			<div class="row">
+  				<ul class="ch-grid row">
+  					<li>
+  						<div class="ch-item ch-img-1">
+  							<div class="ch-info">
+  								<h3>Альберт Габидуллин</h3>
+  								<p>ЖЕНИХ</p>
+  							</div>
+  						</div>
+  					</li>
+  					<li id="mid">
+  						<div class="ch-item ch-img-2">
+  							<div class="ch-info">
+  								<h3>Альберт и Алина Габидуллины</h3>
+  							</div>
+  						</div>
+  					</li>
+  					<li>
+  						<div class="ch-item ch-img-3">
+  							<div class="ch-info">
+  								<h3>Алина Шарипова</h3>
+  								<p>НЕВЕСТА</p>
+  							</div>
+  						</div>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="white">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-8 col-lg-offset-2">
+  					<h2>Лавстори</h2>
+  					<span class="hearts"></span>
+  					<div class="row postDetails">
+  						<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  							<div class="postYear">Jan, 2011 </div>
+  						</div>
+  						<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  							<div class="arrowpart"></div>
+  							<div class="exCon">
+  								<h3>First Date</h3>
+  								<p><span class="dropcap">N</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="row postDetails">
+  						<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  							<div class="postYear">Feb, 2011</div>
+  						</div>
+  						<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  							<div class="arrowpart"></div>
+  							<div class="exCon">
+  								<h3>Second Meeting</h3>
+  								<p><span class="dropcap">O</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="row postDetails">
+  						<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  							<div class="postYear">Mar, 2012</div>
+  						</div>
+  						<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  							<div class="arrowpart"></div>
+  							<div class="exCon">
+  								<h3>He played a music for me</h3>
+  								<p><span class="dropcap">W</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="row postDetails">
+  						<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+  							<div class="postYear">April, 2012</div>
+  						</div>
+  						<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+  							<div class="arrowpart"></div>
+  							<div class="exCon">
+  								<h3>Our first picture together</h3>
+  								<p><span class="dropcap">S</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<section id="gallery"></section>
+  	<div class="darkgrey">
+  		<section id="photostack" class="photostack photostack-start">
+  			<div>
+  				<figure style="-webkit-transform: translate(80px, 20px) rotate(27deg); transform: translate(80px, 20px) rotate(25deg);">
+  					<a href="images/1.jpg" class="photostack-img"><img src="images/1s.jpg" alt="img01"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Serenity Beach</h2>
+  					</figcaption>
+  				</figure>
+  				<figure style="-webkit-transform: translate(560px, 380px) rotate(-30deg); transform: translate(560px, 380px) rotate(0deg);">
+  					<a href="images/2.jpg" class="photostack-img"><img src="images/2s.jpg" alt="img02"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Happy Days</h2>
+  					</figcaption>
+  				</figure>
+  				<figure style="-webkit-transform: translate(720px, 200px) rotate(16deg); transform: translate(720px, 200px) rotate(-24deg);">
+  					<a href="images/3.jpg" class="photostack-img"><img src="images/3s.jpg" alt="img03"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Beautywood</h2>
+  					</figcaption>
+  				</figure>
+  				<figure style="-webkit-transform: translate(80px, -160px) rotate(-1deg); transform: translate(80px, -160px) rotate(26deg);">
+  					<a href="images/4.jpg" class="photostack-img"><img src="images/4s.jpg" alt="img04"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Heaven of time</h2>
+  					</figcaption>
+  				</figure>
+  				<figure style="-webkit-transform: translate(400px, -160px) rotate(-24deg); transform: translate(400px, -160px) rotate(25deg);">
+  					<a href="images/5.jpg" class="photostack-img"><img src="images/5s.jpg" alt="img05"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Speed Racer</h2>
+  					</figcaption>
+  				</figure>
+  				<figure style="-webkit-transform: translate(80px, 380px) rotate(9deg); transform: translate(80px, 380px) rotate(10deg);">
+  					<a href="images/6.jpg" class="photostack-img"><img src="images/6s.jpg" alt="img06"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Forever this</h2>
+  					</figcaption>
+  				</figure>
+  				<figure data-dummy="" style="-webkit-transform: translate(1040px, 20px) rotate(-22deg); transform: translate(1040px, 20px) rotate(-31deg);">
+  					<a href="#" class="photostack-img"><img src="images/7s.jpg" alt="img07"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Lovely Green</h2>
+  					</figcaption>
+  				</figure>
+  				<figure data-dummy="" style="-webkit-transform: translate(880px, -160px) rotate(-13deg); transform: translate(880px, -160px) rotate(-15deg);">
+  					<a href="#" class="photostack-img"><img src="images/8s.jpg" alt="img08"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Wonderful</h2>
+  					</figcaption>
+  				</figure>
+  				<figure data-dummy="" style="-webkit-transform: translate(240px, -160px) rotate(-32deg); transform: translate(240px, -160px) rotate(-31deg);">
+  					<a href="#" class="photostack-img"><img src="images/9s.jpg" alt="img09"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Love Addict</h2>
+  					</figcaption>
+  				</figure>
+  				<figure data-dummy="" style="-webkit-transform: translate(1040px, 200px) rotate(-30deg); transform: translate(1040px, 200px) rotate(25deg);">
+  					<a href="#" class="photostack-img"><img src="images/10s.jpg" alt="img10"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Friendship</h2>
+  					</figcaption>
+  				</figure>
+  				<figure data-dummy="" style="-webkit-transform: translate(720px, 380px) rotate(20deg); transform: translate(720px, 380px) rotate(-16deg);">
+  					<a href="#" class="photostack-img"><img src="images/11s.jpg" alt="img11"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">White Nights</h2>
+  					</figcaption>
+  				</figure>
+  				<figure data-dummy="" style="-webkit-transform: translate(560px, -160px) rotate(-6deg); transform: translate(560px, -160px) rotate(17deg);">
+  					<a href="#" class="photostack-img"><img src="images/12s.jpg" alt="img12"></a>
+  					<figcaption>
+  						<h2 class="photostack-title">Serendipity</h2>
+  					</figcaption>
+  				</figure>
+  			</div>
+  			<nav><span></span><span></span><span></span><span></span><span></span><span></span></nav></section>
+  		</div>
+  		<section id="events"></section>
+  		<div class="white noPadding">
+  			<div class="container">
+  				<div class="row">
+  					<h2>Мероприятия</h2>
+  					<span class="hearts"></span>
+  					<div class="col-md-6 event">
+  						<h3>Main Ceremony</h3>
+  						<div class="grid">
+  							<a href="#">
+  								<figure>
+  									<img src="images/event-1.jpg">
+  									<figcaption>
+  										<button>View</button>
+  									</figcaption>
+  								</figure>
+  							</a>
+  						</div>
+  						<div class="event-meta"><span><i class="fa fa-calendar-o"></i> May 5, 2014</span> <span><i class="fa fa-clock-o"></i> 3:00pm - 4:00pm</span>
+  							<span> <i class="fa fa-building-o"></i> San Sebastian Parish Church</span></div>
+  							<p class="justify"><span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  							<a href="#" class="link">View in Google Maps</a>
+  							<br>
+  						</div>
+  						<div class="col-md-6  event">
+  							<h3>After Party</h3>
+  							<div class="grid">
+  								<a href="#">
+  									<figure>
+  										<img src="images/event-2.jpg">
+  										<figcaption>
+  											<button>View</button>
+  										</figcaption>
+  									</figure>
+  								</a>
+  							</div>
+  							<div class="event-meta"><span><i class="fa fa-calendar-o"></i> May 5, 2014</span> <span><i class="fa fa-clock-o"></i> 3:00pm - 4:00pm</span>
+  								<span> <i class="fa fa-building-o"></i> Carribean Resort, Goldenfield</span></div>
+  								<p class="justify"><span class="dropcap">S</span>ome ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  								<a href="#" class="link">View in Google Maps</a>
+  								<br>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<section id="rsvp"></section>
+  				<div id="rsvpwrap">
+  					<div class="container">
+  						<div class="row">
+  							<h2 class="amp">Не забудь отметиться</h2>
+  							<span class="hearts"></span>
+  							<form name="contact" method="post" action="index.html" class="af-form" id="af-form">
+  								<div class="col-lg-4 col-lg-offset-4">
+
+
+  									<div class="form-group">
+  										<input type="text" name="name" id="name" size="30" value="" placeholder="Name" class="text-input form-control">
+  										<label class="error" for="name" id="name_error" style="display: none;">Name is required.</label>
+  									</div>
+
+  									<div class="form-group">
+  										<input type="radio" value="Will be there" id="response_accepted" name="response">
+  										Will be there
+  										<input type="radio" value="Won't make it" id="response_declined" name="response">
+  										Won't make it
+  										<label id="response_error" for="response" class="error" style="display: none;">Please select an option</label>
+  									</div>
+
+  									<div class="form-group">
+  										<input type="text" name="email" id="email" size="30" value="" placeholder="Email" class="text-input form-control">
+  										<label class="error" for="email" id="email_error" style="display: none;">Email is required.</label>
+  									</div>
+
+
+  									<div class="form-group">
+  										<input type="text" name="guests" id="guests" size="30" value="" placeholder="No. of guests attending" class="text-input form-control">
+  										<label class="error" for="guests" id="guests_error" style="display: none;">No. of guests is required.</label>
+  									</div>
+
+
+
+
+  									<div class="form-group">
+  										<textarea name="message" id="input-message" cols="30" placeholder="Message" class="text-input form-control"></textarea>
+  										<label class="error" for="input-message" id="message_error" style="display: none;">Message is required.</label>
+  									</div>
+
+
+
+
+  									<div class="form-group af-outer af-required">
+  										<input type="submit" name="submit" class="form-button btn btn-primary form-control" id="submit_btn" value="Submit">
+  									</div>
+  								</div>
+  							</form>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="grey">
+  					<div class="container">
+  						<div class="row">
+  							<div class="col-lg-8 col-lg-offset-2">
+  								<h2>Альберт Алину любит. Алина Альберта любит.
+  								</h2>
+  								<span>Кто-то великий</span>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<script src="js/jquery.min.js"></script>
+  				<script src="js/jquery.lwtCountdown-1.0.js"></script>
+  				<script src="js/bootstrap.min.js"></script>
+  				<script src="js/smoothscroll.js"></script>
+  				<script src="js/jquery.smooth-scroll.js"></script>
+  				<script src="js/jquery.magnific-popup.min.js"></script>
+  				<script src="js/supersized.3.2.7.min.js"></script>
+  				<script src="js/classie.js"></script>
+  				<script src="js/ajax-mail.js"></script>
+  				<script src="js/photostack.js"></script>
+  				<script src="js/main.js"></script>
+
+  				<ul id="supersized"></ul></body></html>

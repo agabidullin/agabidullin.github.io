@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Calligraph';
+    src: url('calligraph.eot');
+    src: url('calligraph.eot?#iefix') format('embedded-opentype'),
+         url('calligraph.woff') format('woff'),
+         url('calligraph.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
