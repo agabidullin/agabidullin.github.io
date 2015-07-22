@@ -4,7 +4,10 @@
 .photostack > div{width:100%;height:100%;margin:0 auto;}
 .photostack figure{width:320px;height:360px;position:relative;display:inline-block;background:#fff;padding:40px;text-align:center;margin:5px;}
 .js .photostack figure{position:absolute;display:block;margin:0;}
-.photostack figcaption h2{margin:20px 0 0 0;color:#a7a0a2;font-size:16px;}
+.photostack figcaption h2{  margin: 20px 0 0 0;
+  color: #40e3e0;
+  font-size: 16px;
+  font-family: inherit;}
 .photostack-img{outline:none;display:block;width:240px;height:240px;background:#f9f9f9;}
 .photostack-back{display:none;position:absolute;width:100%;height:100%;top:0;left:0;background:#fff;font-family:"Give You Glory", cursive;color:#a7a0a2;padding:50px 40px;text-align:left;font-size:22px;line-height:1.25;}
 .photostack-back p{margin:0;}
