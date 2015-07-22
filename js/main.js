@@ -48,11 +48,11 @@
             transition_speed: 700,
             slide_links: 'blank',
             slides: [{
-                image: 'images/slider-1.jpg'
+                image: 'images/slider-1.JPG'
             }, {
-                image: 'images/slider-2.jpg'
+                image: 'images/slider-2.JPG'
             }, {
-                image: 'images/slider-3.jpg'
+                image: 'images/slider-3.JPG'
             }]
         });
     });
