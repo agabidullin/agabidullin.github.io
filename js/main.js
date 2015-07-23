@@ -68,11 +68,9 @@
 
             if (!nVal || !gVal || !dVal){
                 alertField.show();
-                
+                $(this).prop('disabled', false);
                 return;
             }
-
-            $(this).prop('disabled', true);
 
             $.ajax({
                 type: 'POST',
@@ -106,7 +104,6 @@
                     descField.val('');
                     alertField.hide();
                     salertField.show();
-
                     $(this).prop('disabled', false);
                     console.log(response); // if you're into that sorta thing
                 });
