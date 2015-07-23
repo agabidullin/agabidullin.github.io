@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<title>Наша свадьба!</title>
+	<title>Альберт и Алина!</title>
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 
@@ -352,8 +352,7 @@
 
   									<div class="form-group">
   										<input type="text" name="name" id="name" size="30" value="" placeholder="Имя" class="text-input form-control">
-  										<label class="error" for="name" id="name_error" style="display: none;">Необходимо заполнить</label>
-  									</div>
+										</div>
 
   									<!-- <div class="form-group">
   										<input type="radio" value="Will be there" id="response_accepted" name="response">
@@ -371,23 +370,23 @@
 
   									<div class="form-group">
   										<input type="text" name="guests" id="guests" size="30" value="" placeholder="Количество гостей" class="text-input form-control">
-  										<label class="error" for="guests" id="guests_error" style="display: none;">Необходимо заполнить</label>
-  									</div>
+										</div>
 
 
 
 
   									<div class="form-group">
   										<textarea name="message" id="input-message" cols="30" placeholder="Пожелание" class="text-input form-control"></textarea>
-  										<label class="error" for="input-message" id="message_error" style="display: none;">Необходимо заполнить</label>
-  									</div>
+										</div>
 
 
 
 
   									<div class="form-group af-outer af-required">
-  										<input type="submit" name="submit" class="form-button btn btn-primary form-control" id="submit_btn" value="Обязательно придём!">
+  										<input type="submit" name="submit" class="form-button btn btn-primary" id="submit_btn" value="Обязательно придём!">
   									</div>
+                    <div class="alert alert-success" role="alert" id="sAlert" hidden="true">Спасибо! Сообщение успешно отправлено!</div>
+                    <div class="alert alert-warning" role="alert" id="alert" hidden="true">Необходимо заполнить все поля!</div>
   								</div>
   							</form>
   						</div>
@@ -416,4 +415,7 @@
   				<script src="js/photostack.js"></script>
   				<script src="js/main.js"></script>
 
-  				<ul id="supersized"></ul></body></html>
+  				<ul id="supersized"></ul>
+
+        </body>
+      </html>

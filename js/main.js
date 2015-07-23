@@ -55,5 +55,57 @@
                 image: 'images/slider-3.JPG'
             }]
         });
+
+        $('#submit_btn').click(function(){
+            var nameField = $('#name'),
+                guestsField = $('#guests'),
+                descField = $('#input-message'),
+                alertField = $('#alert'),
+                salertField = $('#sAlert'),
+                nVal = nameField.val(),
+                gVal = guestsField.val(),
+                dVal = descField.val();
+
+            if (!nVal || !gVal || !dVal){
+                alertField.show();
+                $(this).prop('disabled', false);
+                return;
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+                data: {
+                    key: 'JRXcOjTGJHW5ZI54MYEOgw',
+                    message: {
+                        from_email: 'agabidullin@gmail.com',
+                        to: [
+                          {
+                            email: 'agabidullin@gmail.com',
+                            name: 'СВАДЬБА',
+                            type: 'to'
+                          }
+                          ,
+                          {
+                            email: 'standpoint10@gmail.com',
+                            name: 'СВАДЬБА',
+                            type: 'to'
+                          }
+                        ],
+                      autotext: true,
+                      subject: 'Сообщение со свадебного сайта!',
+                      html: 'Гость под именем ' + nVal + ' сказал, что будет на свадьбе! Их будет ' + gVal 
+                            + ' человек! Еще он оставил пожелание: ' + dVal + '. Конец сообщения!'
+                    }
+                }
+                }).done(function(response) {
+                    nameField.val('');
+                    guestsField.val('');
+                    descField.val('');
+                    alertField.hide();
+                    salertField.show();
+                   console.log(response); // if you're into that sorta thing
+                });
+            })
     });
 })(jQuery);
