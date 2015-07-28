@@ -507,7 +507,7 @@ width:250px;
 }
 
 .ch-img-3 { 
-	background-image: url(../images/bride.jpg);
+	background-image: url(../images/bride.jpg?v=123);
 }
 
 .ch-info {
